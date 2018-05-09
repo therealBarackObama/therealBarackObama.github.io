@@ -26,6 +26,8 @@ github_username:  therealBarackObama
 
 disqus:
   shortname: therealbarackobamas-jekyll-site
+  
+timezone: America/Los_Angeles
 
 # Build settings
 markdown: kramdown

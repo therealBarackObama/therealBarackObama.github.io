@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+
+
+<body>
+<style>
+    	* { padding: 0; margin: 0; }
+    	canvas { background: #eee; display: block; margin: 0 auto; }
+    </style>
+
+
+<canvas id="myCanvas" width="480" height="320"></canvas>
+
+<script>
+	// JavaScript code goes here
+</script>
+<script type="text/javascript">
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+ctx.beginPath();
+ctx.rect(20, 40, 100, 100);
+ctx.fillStyle = "#FF0000";
+ctx.fill();
+ctx.closePath();
+
+make_base();
+
+function make_base()
+{
+  base_image = new Image();
+  base_image.src = 'img/base.png';
+  context.drawImage(base_image, 100, 100);
+}
+</script>
+
+</body>
+</head>
+</html>

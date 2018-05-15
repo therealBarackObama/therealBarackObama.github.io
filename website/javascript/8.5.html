@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+
+<p id="demo"></p>
+
+<script>
+function dice() {
+     return  Math.floor((Math.random() * 6)+1);
+}
+var count = 0;
+while (count != 20){
+document.write(dice() + "<br>");
+count++;
+}
+var count6 = 0;
+var count5 = 0;
+var count4 = 0;
+var count3 = 0;
+var count2 = 0;
+var count1  = 0;
+var count = 0;
+while (count != 100){
+count++;
+if (dice() == 6){
+	count6++;
+}
+
+if (dice() == 5){
+	count5++;
+}
+if (dice() == 4){
+	count4++;
+}
+if (dice() == 3){
+	count3 ++;
+}
+if (dice() == 2){
+	count2++;
+}
+if (dice() == 1){
+	count1++;
+}
+}
+document.write(" After rolling the dice 100 times "+"<br>"+"There were ",count1," 1's"+"<br>"+"There were ",count2," 2's"+"<br>"+"There were ",count3," 3's"+"<br>"+"There were ",count4," 4's"+"<br>"+"There were ",count5," 5's"+"<br>"+"There were ",count6," 6's"+"<br>");
+</script>
+</body>
+</html>

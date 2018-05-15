@@ -1,0 +1,119 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*****************/
+/*color and fonts*/
+/*****************/
+/* _______________/
+/* My color palette
+Color 1: #1336B2
+Color 2: #FFBB00
+Color 3: #6386FF
+*/
+body {
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: #0070FF;
+		background-image: url("../images/calvin_and_hobbes.jpg");
+	}
+	
+	#header, #sidebar, #content, #footer {
+		background-color: rgba(255,255,255,0.8);
+		margin-bottom: 4px;
+		Border: ridge;
+		border-radius: 40px;
+		border-color: grey;
+		padding-left: 4px;
+		padding-right: 4px;
+	}
+	/*****************/
+	/*Basic structure*/
+	/*****************/
+	#wrapper {
+		width:  960px;
+		padding: 5px;
+		margin: 20px auto;
+	}
+	
+	#sidebar {
+			float: right;
+			width: 300px;
+	}
+	#content {
+		float: left;
+		width: 600px;
+	}
+	
+#header {
+		height:  100px;
+}
+
+#footer { 
+	clear: both;
+}
+	/*****************/
+	/*Basic structure*/
+	/*****************/
+	/*****************/
+	/*Basic structure*/
+	/*****************/
+	/*****************/
+	/*Basic structure*/
+	/*****************/
+	/* ___
+		(*!*)
+	 --(  )-
+		 /\      */
+		/*****************/
+	/*responsive width*/
+	/*****************/
+	/* ___
+		(*!*)
+	 --(  )-
+		 /\      */
+	@media screen and (max-width: 980px) {
+		#wrapper  {
+			width: 94%;
+		}
+		#content  {
+			width:65%
+		}
+		#sidebar  {
+			width: 30%
+		}
+	}
+	@media screen and (max-width: 700px) {
+		#content, #sidebar {
+			width: auto;
+			float: none;
+		}
+		#header {
+			height: auto;
+		}
+	}
+	@media screen and (max-width: 480px) {
+		#header {
+			height: 24px;
+		}
+		h1 {
+				fon-size: 24px;
+		}
+		#sidebar {
+				float: none;
+		}
+	}	
+	
+	/*phones*/
+	@media only screen
+	and (min-device-width: 320px) 
+	and (max-device-width: 320px) {
+			body {
+					font-size: 40px;
+			}
+			#header {
+				height: auto;
+			}
+			#content  {
+					width: auto;
+			}
+	 }
+	

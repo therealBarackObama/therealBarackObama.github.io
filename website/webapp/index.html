@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Web App</title>
+<!--Stylesheet-->
+<link rel="stylesheet" type="text/css" href="webapp.css">
+<!--JavaScript-->
+<script type="text/javascript" src="webapp.js"></script>
+<!--jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+
+<body>
+
+<strong><h1>MEME STORE</h1></strong>
+
+<p align="center">
+
+	<button onClick="buy('nut')"><div class="tooltip"><img height="100" src="images/Nut-of-steel.png"><span class="tooltiptext">Nut (<span id="nut">0</span>) ($<span id="nutprice">10</span>)</span></div></button>
+	
+    <button onClick="buy('spaghett')"><div class="tooltip"><img height="100" src="images/spagghet-nerd-boi.png"><span class="tooltiptext">Spaghett (<span id="spaghett">0</span>) ($<span id="spaghettprice">100</span>)</span></div></button>
+	
+	<button onClick="buy('mistabean')"><div class="tooltip"><img height="100" src="images/657640-mr-bean-alien.png"><span class="tooltiptext">Mistabean (<span id="mistabean">0</span>) ($<span id="mistabeanprice">1,000</span>)</span></div></button>
+	
+	<button onClick="buy('robloks')"><div class="tooltip"><img height="100" src="images/roblox.png"><span class="tooltiptext">Robloks (<span id="robloks">0</span>) ($<span id="robloksprice">10,000</span>)</span></div></button>
+	
+	<button onClick="buy('flex_tape')"><div class="tooltip"><img height="100" src="images/tape_1.png"><span class="tooltiptext">Flex Tape (<span id="flex_tape">0</span>) ($<span id="flex_tapeprice">100,000</span>)</span></div></button>
+	
+	<button onClick="buy('de_wae')"><div class="tooltip"><img height="100" src="images/pie.png"><span class="tooltiptext">De Wae (<span id="de_wae">0</span>) ($<span id="de_waeprice">1,000,000</span>)</span></div></button>
+
+</p>
+<p>Karma Per Second: <input id= "karmaps" type= "text" value= "0" readonly></p>
+<p align="center">
+<button onclick= "memeclicker()" id="ugandan"><img src="frames/0.png" height="312"></button>
+<input id= "score" type= "text" value= "0" readonly>
+</p>
+<p><a href="../index.html">Home</a></p>
+</body>
+</html>

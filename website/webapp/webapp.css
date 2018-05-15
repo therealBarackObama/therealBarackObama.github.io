@@ -1,0 +1,112 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	 font-family:"Comic Sans MS;", "Comic Sans MS", "Comic Sans MS", "Comic Sans MS", Comic Sans MS, Comic Sans MS, Comic Sans MS;
+	background-image: url("images/desert.png");
+	background-size: 2000px;
+	background-repeat: no-repeat;
+	color: black;
+	text-align: center;
+}
+
+
+button {
+	cursor:pointer;
+	background-color:transparent;
+	border-style: none;
+}
+
+figcaption {
+	font-size:20px;
+}
+
+#score {
+	font-family: monospace;
+	text-align:right;
+}
+
+#karmaps {
+	font-family: monospace;
+	text-align:right;
+}
+
+/*screen changes*/
+@media screen and (max-width: 980px) {
+		#wrapper  {
+			width: 94%;
+		}
+		#content  {
+			width:65%
+		}
+		#sidebar  {
+			width: 30%
+		}
+	}
+	@media screen and (max-width: 700px) {
+		#content, #sidebar {
+			width: auto;
+			float: none;
+		}
+		#header {
+			height: auto;
+		}
+	}
+	@media screen and (max-width: 480px) {
+		#header {
+			height: 24px;
+		}
+		h1 {
+				fon-size: 24px;
+		}
+		#sidebar {
+				float: none;
+		}
+	}	
+	
+	
+/*pop up info bar*/
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 16px;
+    padding: 10px 0;
+	font-size:25px;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	width: 120px;
+    bottom: 100%;
+    left: 50%; 
+    margin-left: -60px; 
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+	
+	/* Fade in tooltip - takes .5 seconds to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+	opacity: 1;
+}
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+

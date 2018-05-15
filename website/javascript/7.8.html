@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<script type="text/javascript">
+    var d = new Date();
+    var h = d.getHours();
+
+document.write("is the hour in military time " + h + " ?");
+
+var h = 13;
+if(h > 11 && h < 14) {
+	var input=confirm("u wanna reserve?");
+	}
+if(input==true){
+var array = [
+		"11",
+		"11:30",
+		"12:30",
+		"12",
+		"1",
+		"1:30",
+		"2",
+		"2:30",
+];
+document.write("User Input :", input,"<br>")
+var randomNumber = Math.floor(Math.random()*array.length);
+document.write("your reservation is at" + array[randomNumber]);
+}
+
+
+if(input==false){
+	document.write("come later");
+}
+			if( h >= 6 && h <= 10 )
+
+				{ alert("continental breakfast is in the lobby"); }
+			
+			else if( h >= 17 && h <= 21)
+				{ alert("you can order room service or visit the food place"); }
+			else if( h <= 5 && h >= 22)
+				{ alert("you'll have to wait"); }
+</script>
+</body>
+</html>
